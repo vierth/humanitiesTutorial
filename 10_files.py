@@ -23,6 +23,6 @@ readfile.close()
 print(contents)
 
 # You can add data to a file with the append "a" flag:
-afile = open("newfile.txt","a")
+afile = open("newfile.txt","a",encoding="utf8")
 afile.write("Writing more to file!")
 afile.close()
