@@ -1,11 +1,15 @@
-# One of the most important tasks in Natural lanaguage processing
-# tokenization (break texts apart into units we can analyze)
+# One of the most important tasks in Natural lanaguage
+# processing is tokenization (break texts apart into units
+# we can analyze). We can do this with NLTK
 import nltk
 
 # First we need something to analyze.
-# If you've downloaded the code, you'll notice there is a
-# file called "holmes.txt", which contains The Adventures
-# of Sherlock Holmes by Arthur Conan Doyle
+
+# If you've downloaded the code, you'll notice there is a file 
+# called "holmes.txt", which contains The Adventures of 
+# Sherlock Holmes by Arthur Conan Doyle.
+
+# Let's open this file:
 textfile = open("holmes.txt","r",encoding="utf8")
 
 # Get the text itself (textfile is a file object)
@@ -18,8 +22,8 @@ textfile.close()
 print(holmesstring[:100])
 
 # Get rid of the Gutenburg boilerplate at beginning and end:
-startpoint = holmesstring.find('*** START OF THIS PROJECT GUTENBERG EBOOK')
-endpoint = holmesstring.find('*** END OF THIS PROJECT GUTENBERG EBOOK')
+startpoint = holmesstring.find('*** START OF THIS PROJECT')
+endpoint = holmesstring.find('*** END OF THIS PROJECT')
 holmesstring = holmesstring[startpoint:endpoint]
 
 # NLTK comes with tools that help us tokenize the text.

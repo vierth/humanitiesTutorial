@@ -1,11 +1,11 @@
-# Regexes are useful because we can find patterns
-# of text using certain special characters
+# Regexes are useful because we can find patterns of text 
+# using certain special characters
 import re
 
 # \d 
 # matches a number
-# Note that re.match() only finds something at the beginning of
-# the string, so we will use search instead
+# Note that re.match() only finds something at the beginning 
+# of the string, so we will use "search" instead
 result = re.search(r'\d', "It is the year 2018.")
 print(result)
 
@@ -43,7 +43,8 @@ result = re.search(r'.', "It is the year 2018.")
 print(result)
 
 # \b
-# matches a word boundary (so we won't find the ship in "friendship"):
+# matches a word boundary (so we won't find the ship in 
+# "friendship"):
 result = re.search(r"\bship","Will we find friendship or an ocean ship?")
 print(result)
 
@@ -54,12 +55,12 @@ print(result)
 
 # +
 # Used in conjunction with something else, matches one or more
-# instance of something:
-result = re.search(r'\d', "It is the year 2018.")
+# instances of the pervious term:
+result = re.search(r'\d+', "It is the year 2018.")
 print(result)
 
 # *
-# Used in conjunction with something else, matches zero or more
-# instance of something:
+# Used in conjunction with something else, matches zero or 
+# more instances of the previous term:
 result = re.search(r'\d*', "It is the year 2018.")
 print(result)

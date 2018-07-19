@@ -22,15 +22,15 @@ We could do this in a single line too:
 filteredWords = [word.lower() for word in words if word.isalnum()]
 '''
 
-# We can see these are now all lowercase and no punctuation
-# is in the list anymore:
+# We can see these are now all lowercase and no punctuation is
+# in the list anymore:
 print(filteredWords[:25])
 
 # Let's check the total number of words:
 length = len(filteredWords)
 print(f"The Adventures of Sherlock Holmes contain {length} words.")
 
-# We can get the number of unique words by using set
+# We can get the number of unique words by using a "set"
 uniqueWords = set(filteredWords)
 uniqueWordLength = len(uniqueWords)
 print(f"Of {length} words, {uniqueWordLength} of them are unique.")

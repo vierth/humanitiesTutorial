@@ -9,7 +9,8 @@ print(aomixup)
 autooo = myString.replace("au", "oo")
 print(autooo)
 
-# By saving the result to the same variable name, you can edit it:
+# By saving the result to the same variable name, you can edit 
+# it:
 print(myString)
 myString = myString.replace("a","o")
 print(myString)

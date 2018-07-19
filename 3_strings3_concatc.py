@@ -1,5 +1,5 @@
-# String concatenation works even when the string
-# is made up of numbers.
+# String concatenation works even when the string is made up
+# of numbers.
 num1 = "1234"
 num2 = "5678"
 

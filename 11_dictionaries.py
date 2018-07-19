@@ -1,7 +1,8 @@
-# Dictionaries let you store information with a key, value pair.
-# These are useful when the order of information doesn't matter
-# create them with curly brackets. Like lists, you can store any
-# kind of information in a dictionary, including other dictionaries
+# Dictionaries let you store information with a key, value
+# pair. These are useful when the order of information doesn't
+# matter create them with curly brackets. Like lists, you can
+# store any kind of information in a dictionary, including
+# other dictionaries
 
 # Creating an empty dictionary:
 myDictionary = {}
@@ -21,5 +22,6 @@ print(gorpAge)
 ages["Blobl"] = 20
 print(ages)
 
-# You will get a KeyError if you try to get information that doesn't exist
+# You will get a KeyError if you try to get information that
+# doesn't exist
 shannonAge = ages["Shannon"]

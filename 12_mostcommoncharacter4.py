@@ -1,5 +1,6 @@
-# Note that last time we got a list of with many duplicates! Let's only save the character
-# if we are not already tracking it!
+# Note that last time we got a list of with many duplicates!
+# Let's only save the character if we are not already tracking
+# it!
 
 myParagraph = myParagraph = "Hi, my name is Paul Vierthaler"
 
@@ -18,11 +19,13 @@ for char in myParagraph:
             
             mostCommonCharacter = [char]
 
-        # Save if freq is equal to the current value and char not already in the list!
+        # Save if freq is equal to the current value and char
+        # not already in the list!
         elif freq == mCCFreq and char not in mostCommonCharacter:
             mostCommonCharacter.append(char)
         
-        # Let's print the values each time to track what is happening:
+        # Let's print the values each time to track what is
+        # happening:
         print(mostCommonCharacter, mCCFreq)
 
 # Print the final results

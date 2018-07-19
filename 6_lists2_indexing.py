@@ -1,5 +1,6 @@
-# Lists always stay in the same order, so you can get information out
-# very easily. List indexes act very similar to string indexs
+# Lists always stay in the same order, so you can get 
+# information out very easily. List indexes act very similar
+# to string indexs
 intList = [1, 2, 3, 4, 5]
 
 # Get the first item

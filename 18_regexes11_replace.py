@@ -16,6 +16,7 @@ myString3 = "Oh Captain, my Captain. Are you a General?"
 myString3 = re.sub(r"(Captain|General)","<title>\g<1></title>", myString3)
 print(myString3)
 
-# Regular expressions are extremely flexible but can
-# become very complicated. If you want to learn more
-# I encourage you to check out regexone.com
+
+# Regular expressions are extremely flexible but can become 
+# very complicated. If you want to learn more I encourage you 
+# to check out regexone.com

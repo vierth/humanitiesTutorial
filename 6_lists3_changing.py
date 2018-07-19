@@ -20,6 +20,7 @@ print(intList)
 intList.insert(1,42)
 print(intList)
 
-# Lists have some unexpected behaviors that the basic datatypes do not
-# many list methods will modify them in place, meaning they do not
-# need to be reassigned to the variable
+# Lists have some unexpected behaviors that the basic 
+# datatypes do not many list methods will modify them in 
+# place, meaning they do not need to be reassigned to the
+# variable

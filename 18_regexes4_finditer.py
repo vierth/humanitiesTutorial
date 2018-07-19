@@ -1,5 +1,5 @@
-# If you recall that normal string searching does not
-# include a findall method. The re library does:
+# If you recall that normal string searching does not include 
+# a findall method. The re library does:
 import re
 
 myString = "In 1954 I found 28 crumpets inside the house at 11 County Road."

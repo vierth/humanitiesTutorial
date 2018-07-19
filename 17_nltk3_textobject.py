@@ -1,5 +1,5 @@
-# NLTK comes with a Text object that has many useful
-# methods that facilitate analysis
+# NLTK comes with a Text object that has many useful methods 
+# that facilitate many common tasks
 import nltk
 
 # Same prep as before
@@ -10,8 +10,8 @@ startpoint = holmesstring.find('*** START OF THIS PROJECT GUTENBERG EBOOK')
 endpoint = holmesstring.find('*** END OF THIS PROJECT GUTENBERG EBOOK')
 holmesstring = holmesstring[startpoint:endpoint]
 
-# To create an NLTK Text object, we need to break the
-# string into a list of words:
+# To create an NLTK Text object, we need to break the string 
+# into a list of words:
 words = nltk.word_tokenize(holmesstring)
 
 # now we just give the nltk.Text() function this list:
@@ -22,5 +22,6 @@ print(holmestext)
 # Now we can create concordances:
 holmestext.concordance("Holmes")
 
-# You can also specify how many words an instances are displayed
+# You can also specify how many words and instances are 
+# displayed:
 # holmestext.concordance("Holmes",width=79,lines=25)

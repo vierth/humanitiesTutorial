@@ -1,5 +1,5 @@
-# Finding a substring using the find method:
-# Note that this only finds the FIRST instance
+# Finding a substring using the find method. Note that this
+# only finds the FIRST instance
 myString = "Hello, my name is Paul!"
 
 result = myString.find("name")

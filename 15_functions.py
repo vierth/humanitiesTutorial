@@ -1,4 +1,4 @@
-# Coding is all about making things easier for ourselves
+# Coding is all about making things easier for ourselves.
 # Some times you will be writing the same code over and 
 # over again. When this happens, it is often best to write
 # a function.

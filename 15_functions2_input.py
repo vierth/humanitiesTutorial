@@ -1,5 +1,5 @@
-# While you can simply write functions with no input
-# it is easy to add inputs:
+# While you can simply write functions with no input it is 
+# easy to add inputs:
 
 # Just put the input inside the parantheses
 def whoseFunction(name):

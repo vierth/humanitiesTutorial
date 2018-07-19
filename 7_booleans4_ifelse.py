@@ -1,5 +1,5 @@
-# If/Else statements allow you to execute a different piece of code
-# if the first statement fails:
+# If/Else statements allow you to execute a different block of
+# code if the first statement fails:
 
 if 30 < 20:
     print("Hey, isn't it weird? 30 is smaller than 20!")

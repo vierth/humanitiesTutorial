@@ -1,11 +1,11 @@
-# The python interpreter will not run anything
-# following a "#" as code!
+# The python interpreter will not run anything following a "#"
+# as code!
 
-# We can use it to add comments to our code
-# so users under stand it more easily!
+# We can use it to add comments to our code so users 
+# understand it more easily!
 
 '''
-Sometimes code takes up multiple lines.
-Three single quotation marks let us type
-multi-line comments!
+Sometimes comments take up multiple lines.
+
+Three single quotation marks let us type multi-line comments!
 '''

@@ -22,13 +22,14 @@ holmesstring = textfile.read()
 textfile.close()
 words = nltk.word_tokenize(holmesstring)
 
-# If we turn this list of words into a series, we can easily get
-# word frequencies:
+# If we turn this list of words into a series, we can easily 
+# get word frequencies:
 wordSeries = Series(words)
 wordCounts = wordSeries.value_counts()
 print(wordCounts)
 
-# We can quickly apply a function to all elements of this series:
+# We can quickly apply a function to all elements of this 
+# series:
 lowerSeries = wordSeries.str.lower()
 wordCounts = wordSeries.value_counts()
 print(wordCounts)

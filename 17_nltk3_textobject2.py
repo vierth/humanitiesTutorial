@@ -17,9 +17,8 @@ print("Similar words to apartment")
 holmestext.similar("apartment")
 
 # Make a lexical dispersion plot:
-# Give this a list of words
-# To let the code keep running, you will have to close
-# the window that opens
+# Give this a list of words. To let the code continue, you 
+# will have to close the window that opens.
 holmestext.dispersion_plot(["murder", "death"])
 
 # Getting collocations:

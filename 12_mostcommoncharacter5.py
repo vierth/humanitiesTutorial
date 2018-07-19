@@ -1,5 +1,6 @@
-# There is a lot of wasted effort in the last version. We only need to run count a single time
-# per character. Let's just get a list of the unique character and check each of those:
+# There is a lot of wasted effort in the last version. We only
+# need to run count a single time per character. Let's just
+# get a list of the unique character and check each of those:
 myParagraph = myParagraph = "Hi, my name is Paul Vierthaler"
 
 # Get the unique characters:
@@ -12,7 +13,8 @@ mCCFreq = 0
 
 
 
-# Now iterate through the unique characters instead of the full string
+# Now iterate through the unique characters instead of the 
+# full string
 for char in uniqueChars:
 
     if char != " ":
@@ -23,7 +25,8 @@ for char in uniqueChars:
             
             mostCommonCharacter = [char]
 
-        # Save if freq is equal to the current value and char not already in the list!
+        # Save if freq is equal to the current value and char 
+        # not already in the list!
         elif freq == mCCFreq and char not in mostCommonCharacter:
             mostCommonCharacter.append(char)
         

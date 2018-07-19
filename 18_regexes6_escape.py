@@ -1,5 +1,5 @@
-# Sometimes you will want to look for the literal
-# instance of something that is a special character
+# Sometimes you will want to look for the literal instance of 
+# something that is a special character
 import re
 
 # you can do this by putting \ before the character:

@@ -6,8 +6,8 @@ def whoseFunction(yourname, myname, interaction="greating"):
     elif type == "parting":
         print(f"Goodbye, {yourname}. I, {myname}, will miss you.")
 
-# Now give the function both inputs. If you don't provide
-# the keyword arguement, it will use the default
+# Now give the function both inputs. If you don't provide the 
+# keyword arguement, it will use the default value.
 whoseFunction("Paul", "Pim")
 
 # This does the same thing:

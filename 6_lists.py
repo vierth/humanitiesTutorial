@@ -1,9 +1,11 @@
 # Python has a number of other, more comlicated datatypes
 # Here, we will talk about lists
 
-# A list is a datatype that is an ordered container
-# for information
-# Create with squre brackets and seperate each item with a comma
+# A list is a datatype that is an ordered container for 
+# information,
+
+# Create with square brackets and seperate each item with a
+# comma
 myList = ["Juan", "Rogier","Ying"]
 
 # A list can be empty

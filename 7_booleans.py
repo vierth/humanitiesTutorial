@@ -1,9 +1,9 @@
-# Booleans are one of the keys to making programs that do things!
+# Booleans are one of the keys to making programs that do
+# things by leting us compare values.
 
-# We will want to make comparisons throughout the our code.
-
-# The boolean operaters return True if the expression evaluates to true
-# and False if the expression evaluates to false
+# The boolean operaters return True if the expression 
+# evaluates to true and False if the expression evaluates to
+# false
 
 # Test if two values are the same:
 5 == 5

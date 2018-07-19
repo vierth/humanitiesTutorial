@@ -1,5 +1,5 @@
-# Conventionally, function definitions occur at the top
-# of your code
+# Conventionally, function definitions occur at the top of
+# your code
 
 # Your functions can have as many inputs as you like
 

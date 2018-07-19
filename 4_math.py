@@ -1,7 +1,8 @@
 # All of your basic math operators are available in Python
 
-# Addition (mathematical operations will return an integer
-# when all numbers are integers, floats if one number is float)
+# Addition (mathematical operations will return an integer 
+# when all numbers are integers, floats if one number is 
+# float)
 add = 10 + 10
 addf = 10 + 10.0
 print(f"Addition (integer result): {add}")
@@ -21,8 +22,8 @@ div = 10/3
 print(f"Division (float result): {div}")
 
 # Integer division:
-# If you want integer division (returning an integer 
-# and dropping remainder, you have to use //)
+# If you want integer division (returning an integer and 
+# dropping remainder, you have to use //)
 intdiv = 10//3
 print(f"Division (integer): {intdiv}")
 

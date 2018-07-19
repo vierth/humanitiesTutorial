@@ -8,8 +8,8 @@ print(myString[0])
 # Print the last character using -1
 print(myString[-1])
 
-# Print the first 10 characters:
-# Not that this will print characters at indexs 0-9 (and NOT 10)!
+# Print the first 10 characters. Note that this will print 
+# characters at indexs 0-9 (and NOT 10)!
 print(myString[:10])
 
 # Print the characters at indexes 4 to 12:

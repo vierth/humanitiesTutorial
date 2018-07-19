@@ -9,7 +9,8 @@ for i in range(10):
 for i in range(2, 10):
     print(f"2: {i} is not yet 10, but started at 2")
 
-# here you can change i in the loop, but it will not affect how i increments
+# here you can change i in the loop, but it will not affect 
+# how i increments
 for i in range(10):
     print(f"3: {i} is not yet 10")
     i += 10

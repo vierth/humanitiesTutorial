@@ -2,8 +2,9 @@
 myNum = "3"
 print(myNum, type(myNum))
 
-# You can change one data type into another with 'casting'
-# to Integer
+# You can change one data type into another with 'casting' 
+
+# to integer
 myNum = int(myNum)
 print(myNum, type(myNum))
 
@@ -15,6 +16,5 @@ print(myNum, type(myNum))
 myNum = str(myNum)
 print(myNum, type(myNum))
 
-# You will get an error if you try to cast
-# something that can't be cast 
-# int("hello"), for example
+# You will get an error if you try to cast something that 
+# can't be cast. int("hello"), for example

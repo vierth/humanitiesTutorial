@@ -1,8 +1,9 @@
-# if/elif/else statements are one of our first opportunities to encounter true bugs
-# where code will run but give us a bad answer. 
+# if/elif/else statements are one of our first opportunities 
+# to encounter a bug where the code will run but gives us a
+# bad answer. 
 
-# the interpreter will exit the block as soon as ANYTHING evaluates true.
-# beware this situation:
+# the interpreter will exit the block as soon as ANYTHING 
+# evaluates true. beware this situation:
 a = 10
 
 if a > 1:

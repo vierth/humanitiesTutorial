@@ -1,5 +1,5 @@
-# We've already seen how to match zero or more/one or more times
-# There are other ways to specify how many times
+# We've already seen how to match zero or more/one or more 
+# times. You can also make this much more specific.
 import re
 
 # {3} will match something with exactly 3 occurences
