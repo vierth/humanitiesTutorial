@@ -59,7 +59,7 @@ termWeight = len(dtm)/docsWithTerm
 inverseDocumentFrequency = termWeight.apply(math.log)
 # Any value that is 1 will go to 0. To avoid this happening it is not uncoomon 
 # to add 1 to this when calculating
-# inverseDocumentFrequency = termWeight.add(1).apply(math.log)
+inverseDocumentFrequency = termWeight.add(1).apply(math.log)
 
 # get the tfidf matrix:
 tfidf = frequencyDtm.multiply(inverseDocumentFrequency)
