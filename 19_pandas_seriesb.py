@@ -34,3 +34,4 @@ print(wordCounts.get("chimp"))
 # programming language), so it does vector operations on Series.
 print(wordCounts*2)
 print(wordCounts + wordCounts)
+print(wordCounts - wordCounts)
