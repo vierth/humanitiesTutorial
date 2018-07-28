@@ -8,10 +8,13 @@ This code is written assuming you have installed the Anaconda distribution of Py
 
 As of July 2018, this remains a work in progress. I will update this readme once the code is complete.
 
+# Updates
+Renamed files to aid organization. Added DataFrames scripts and TFIDF
+
 # TO DO
-pandas dataframes
 matplotlib
 stylometry
 topic modeling
 word2vec
 apis and webscraping
+
