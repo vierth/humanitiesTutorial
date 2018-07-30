@@ -8,12 +8,13 @@ This code is written assuming you have installed the Anaconda distribution of Py
 
 As of July 2018, this remains a work in progress. I will update this readme once the code is complete.
 
+# Note
+Code in the stylometry files opens texts from a folder called "corpus." This folder is created by code in the 20_corpusrep1_dividing.py, so run that before you try to run the stylometry code. The two fed (federalist papers) examples do NOT require this corpus folder, so feel free to run those immediately.
+
 # Updates
-Renamed files to aid organization. Added DataFrames, Corpus Basics, matplotlib
+Renamed files to aid organization. Added DataFrames, Corpus Basics, matplotlib, stylometry
 
 # TO DO
-matplotlib
-stylometry
 topic modeling
 word2vec
 apis and webscraping
