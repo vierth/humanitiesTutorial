@@ -25,6 +25,8 @@ shortStories = re.split(r"ADVENTURE [IVX]+\. ([A-Z\-' ]+)", text)
 if not os.path.isdir("corpus"):
     os.mkdir("corpus")
 
+# These next lines are here for system compatibility. If you are on a windows
+# computer, you will need to use a 
 
 # Delete the first item, which is just preamble
 shortStories = shortStories[1:]
@@ -36,7 +38,9 @@ for i in range(0,len(shortStories)-1):
     if i % 2 == 0:
         filename = shortStories[i]+".txt"
         story = shortStories[i+1]
-        wf = open(f"corpus/{filename}","w")
+        # if we use os.path.join, this code will work on all systems, windows,
+        # mac, and linux!
+        wf = open(os.path.join("corpus",filename),"w")
         wf.write(story)
         wf.close()
 

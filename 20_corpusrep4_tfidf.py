@@ -11,7 +11,7 @@ from pandas import Series, DataFrame
 sherlockTexts = {}
 for root, dirs, files in os.walk("corpus"):
     for filename in files:
-        with open(f"{root}/{filename}") as rf:
+        with open(os.path.join(root,filename)) as rf:
             title = filename[:-4]
             title = title.lower()
             shortStory = rf.read()
