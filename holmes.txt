@@ -6227,7 +6227,7 @@ we drive to Baker Street we shall just be in time for breakfast."
 
 
 
-VII. THE ADVENTURE OF THE BLUE CARBUNCLE
+ADVENTURE VII. THE ADVENTURE OF THE BLUE CARBUNCLE
 
 I had called upon my friend Sherlock Holmes upon the second
 morning after Christmas, with the intention of wishing him the
@@ -7206,7 +7206,7 @@ feature."
 
 
 
-VIII. THE ADVENTURE OF THE SPECKLED BAND
+ADVENTURE VIII. THE ADVENTURE OF THE SPECKLED BAND
 
 On glancing over my notes of the seventy odd cases in which I
 have during the last eight years studied the methods of my friend
@@ -8414,7 +8414,7 @@ weigh very heavily upon my conscience."
 
 
 
-IX. THE ADVENTURE OF THE ENGINEER'S THUMB
+ADVENTURE IX. THE ADVENTURE OF THE ENGINEER'S THUMB
 
 Of all the problems which have been submitted to my friend, Mr.
 Sherlock Holmes, for solution during the years of our intimacy,
@@ -9381,7 +9381,7 @@ existence."
 
 
 
-X. THE ADVENTURE OF THE NOBLE BACHELOR
+ADVENTURE X. THE ADVENTURE OF THE NOBLE BACHELOR
 
 The Lord St. Simon marriage, and its curious termination, have
 long ceased to be a subject of interest in those exalted circles
@@ -10407,7 +10407,7 @@ these bleak autumnal evenings."
 
 
 
-XI. THE ADVENTURE OF THE BERYL CORONET
+ADVENTURE XI. THE ADVENTURE OF THE BERYL CORONET
 
 "Holmes," said I as I stood one morning in our bow-window looking
 down the street, "here is a madman coming along. It seems rather
@@ -11536,7 +11536,7 @@ sufficient punishment."
 
 
 
-XII. THE ADVENTURE OF THE COPPER BEECHES
+ADVENTURE XII. THE ADVENTURE OF THE COPPER BEECHES
 
 "To the man who loves art for its own sake," remarked Sherlock
 Holmes, tossing aside the advertisement sheet of the Daily
