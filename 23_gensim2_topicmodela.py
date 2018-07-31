@@ -6,7 +6,6 @@
 
 import gensim, nltk, os
 
-# Let's load in the sherlock corpus to study it:
 ignoreFiles = set([".DS_Store","LICENSE","README.md"])
 sherlockTexts = []
 sherlockTitles = []
@@ -26,47 +25,40 @@ shortenTitle = {"the adventure of the engineer's thumb":"Engineer's Thumb",
                 'a scandal in bohemia':"Bohemia"}
 
 shortTitles = [shortenTitle[title] for title in sherlockTitles]
-
-# Let's do a bit of cleaning first to prep our texts for analysis in gensim
-lemmatizer = nltk.WordNetLemmatizer()
-# You can remove stopwords if you want, but I generally prefer not to. nltk
-# has a default list you can use: nltk.corpus.stopwords.words('english')
-# just put that inside set()
 stopwords = set()
+lemmatizer = nltk.WordNetLemmatizer()
 refinedTexts = []
 for text in sherlockTexts:
     tokenized = nltk.word_tokenize(text)
-    # get rid of punctuation and lemmatize all the words
     refined = [lemmatizer.lemmatize(word) for word in tokenized if word.isalnum() and word not in stopwords]
     refinedTexts.append(refined)
 
-# Gensim is designed to take advantage of quick running algorithms that require
-# integers. It has built in functions to help with this:
 corpusDictionary = gensim.corpora.Dictionary(refinedTexts)
+corpusDictionary.filter_extremes(no_below=5)
 
-# We can filter this dictionary in a number of ways, but I won't for the moment
-# corpusDictionary.filter_extremes(no_below=5, no_above=.7)
-
-# Gensim uses bag of word vectors for topic modeling. This will transform the 
-# corpus into a list of tuples, each representing a word found in the original
-# document:
 processedCorpus = [corpusDictionary.doc2bow(text) for text in refinedTexts] 
 
-# You can save the processed corpus to file if you want by serializing it
-# This is most useful when you are working with a large corpus that you don't
-# want to process on the fly
-# Save:
-# gensim.corpora.Mmcorpus.serialize('mycorpus.mm', processedCorpus)
-# Load:
-# processedCorpus = gensim.corpora.Mmcorpus('mycorpus.mm')
+# Let's actually run a topic model this time. First let's set how many topics
+# we want:
+numberOfTopics = 20
 
-# Sanity check. Let's look at the processed corpus and try to recover the 
-# original words:
-vectorWords = []
-for item in processedCorpus[0]:
-    term = corpusDictionary[item[0]]
-    frequency = item[1]
-    vectorWords.append((term,frequency))
+# LDA (latent drichlet allocation) is a popular topic modeling algorithm. 
+# Many scholars like the MALLET implementation, and gensim has a wrapper for 
+# this! You will need java installed on your system and to download MALLET from
+# http://mallet.cs.umass.edu/download.php
+# Unzip this and place it in the same directory as this code.
 
-print(processedCorpus[0][:10])
-print(vectorWords[:10])
+# Once you've done this we will need to tell the code where mallet lives
+malletPath = os.path.join("mallet-2.0.8","bin","mallet")
+
+# train the model:
+ldaModel = gensim.models.wrappers.ldamallet.LdaMallet(malletPath,corpus=processedCorpus,
+                            id2word=corpusDictionary,num_topics=numberOfTopics,
+                            optimize_interval=50, prefix="my")
+
+corpusLda = ldaModel[processedCorpus]
+
+topics = ldaModel.show_topics(num_topics=20, num_words=5)
+
+for topic in topics:
+    print(topic)
