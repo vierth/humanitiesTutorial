@@ -34,7 +34,6 @@ for text in sherlockTexts:
     refinedTexts.append(refined)
 
 corpusDictionary = gensim.corpora.Dictionary(refinedTexts)
-corpusDictionary.filter_extremes(no_below=5)
 
 processedCorpus = [corpusDictionary.doc2bow(text) for text in refinedTexts] 
 
