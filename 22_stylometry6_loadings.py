@@ -1,4 +1,6 @@
-# Let's run the analysis again, but this time with the federalist papers
+# In order to help with interpretation, it is often useful to plot the 
+# component loadings, which will show us how individual words influence where
+# documents appear in the plot.
 import re, nltk, os
 from pandas import DataFrame
 import numpy as np
@@ -18,7 +20,6 @@ papers = papers[1:]
 
 federalistnum = [i+1 for i in range(len(papers))]
 
-# Create a dictionary with the authorship information
 authorship={}
 for i in range(len(papers)):
     fno = i+1
@@ -37,35 +38,31 @@ countVectorizer = TfidfVectorizer(max_features=1000, use_idf=False)
 countMatrix = countVectorizer.fit_transform(papers)
 countMatrix = countMatrix.toarray()
 
-
-# Lets perform PCA on the countMatrix:
 pca = PCA(n_components=2)
 myPCA = pca.fit_transform(countMatrix)
 
-# Now we need the Unique Authors
+
 uniqueAuthors = ["Hamilton", "Madison", "Jay", "Unknown"]
-# Let's get a number for each class
 numberForClass = [i for i in range(len(uniqueAuthors))]
-# Make a dictionary! This is new sytax for us! It just makes a dictionary where
-# the keys are the unique years and the values are found in numberForClass
 authForClassNumber = dict(zip(uniqueAuthors,numberForClass))
-
-# Let's make a new representation for each document that is just these integers
-# and it needs to be a numpy array
 textClass = np.array([authForClassNumber[authorship[str(f)]] for f in federalistnum])
-
-
-# Make a list of the colors
 colors = [authorColor[auth] for auth in uniqueAuthors]
 
+# When we plot the information, let's make the dots smaller and make them 
+# transparent
 for col, classNumber, year in zip(colors, numberForClass, uniqueAuthors):
-    plt.scatter(myPCA[textClass==classNumber,0],myPCA[textClass==classNumber,1],label=year,c=col)
+    plt.scatter(myPCA[textClass==classNumber,0],myPCA[textClass==classNumber,1]
+                    ,label=year,c=col, s=2,alpha=.5)
 
-# Let's label individual points so we know WHICH document they are
-for number, datapoint in zip(federalistnum, myPCA):
-    plt.annotate(str(number),xy=datapoint)
+# get the component loadings. Note this comes from the pca object, not the fit
+# and transformed object called myPCA:
+loadings = pca.components_
+# get the vocabulary from the countVectorizer:
+vocabulary = countVectorizer.get_feature_names()
 
-# Let's add a legend! matplotlib will make this for us based on the data we 
-# gave the scatter function.
+# Add them to the plot!
+for i, word in enumerate(vocabulary):
+    plt.annotate(word,xy=(loadings[0,i],loadings[1,i]))
+
 plt.legend()
 plt.show()
