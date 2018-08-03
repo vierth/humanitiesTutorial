@@ -62,5 +62,8 @@ print(result)
 # *
 # Used in conjunction with something else, matches zero or 
 # more instances of the previous term:
-result = re.search(r'\d*', "It is the year 2018.")
+result = re.search(r'humou*r', "humor.")
+print(result)
+
+result = re.search(r'humou*r', "humouuuuuuuuuur.")
 print(result)
