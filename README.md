@@ -6,16 +6,11 @@ While this should serve as a functional introduction to Python, it is not meant 
 
 This code is written assuming you have installed the Anaconda distribution of Python 3 (and should be compatible with Python 3.6 and up).
 
-As of July 2018, this remains a work in progress. I will update this readme once the code is complete.
+As of October 1st 2018, this is fully complete, but I will update the code as I catch errors.
 
 # Note
 Code in the stylometry files opens texts from a folder called "corpus." This folder is created by code in the 20_corpusrep1_dividing.py, so run that before you try to run the stylometry code. The two fed (federalist papers) examples do NOT require this corpus folder, so feel free to run those immediately.
 
 # Updates
-Renamed files to aid organization. Added DataFrames, Corpus Basics, matplotlib, stylometry
-
-# TO DO
-topic modeling
-word2vec
-apis and webscraping
+Renamed files to aid organization. Added DataFrames, Corpus Basics, matplotlib, stylometry, topic modeling, word2vec, apis, and webscraping.
 
