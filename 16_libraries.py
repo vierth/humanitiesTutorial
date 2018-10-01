@@ -48,4 +48,4 @@ from matplotlib import pyplot # Import only the pyplot module
 from matplotlib import pyplot as plt
 
 # Also:
-from matplotlib.pyplot import plt
+import matplotlib.pyplot as plt
