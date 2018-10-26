@@ -31,5 +31,5 @@ print(wordCounts)
 # We can quickly apply a function to all elements of this 
 # series:
 lowerSeries = wordSeries.str.lower()
-wordCounts = wordSeries.value_counts()
+wordCounts = lowerSeries.value_counts()
 print(wordCounts)
